@@ -1,0 +1,326 @@
+/* ==========================================
+   ESTILOS GENERALES
+   ========================================== */
+
+body{
+    background-color: rgb(172, 186, 199);
+    font-size: 50px;
+}
+
+.titulo{
+    color: rgba(241, 212, 154);
+    background-color: rgb(39, 41, 53);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 50px;
+}
+
+.logo{
+    width: 300px;
+    height: 180px;
+}
+
+
+/* ==========================================
+   MENÚ DE NAVEGACIÓN
+   ========================================== */
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #d4af37;
+    font-size: 24px;
+    font-family: 'Epilogue', sans-serif;
+    transition: .3s;
+}
+
+.menu a:hover{
+    color: white;
+}
+
+.menu .activo{
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 5px;
+}
+
+
+/* ==========================================
+   QUIÉNES SOMOS
+   ========================================== */
+
+.titulo2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 60px;
+    margin: 80px;
+
+    font-family: Arial;
+    color: black;
+}
+
+.texto{
+    width: 45%;
+    color: black;
+}
+
+.video{
+    width: 55%;
+}
+
+.video-portada{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+
+
+/* ==========================================
+   MISIÓN Y VISIÓN
+   ========================================== */
+
+.mision-vision{
+    width: 100%;
+    margin: 100px auto;
+}
+
+.contenedor-cards{
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.card-mision,
+.card-vision{
+    flex: 1;
+    padding: 45px;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.card-mision{
+    background: #F5F6F8;
+    color: #1F2A44;
+    border-left: 8px solid #C8A96A;
+}
+
+.card-vision{
+    background: #1F2A44;
+    color: white;
+    border-left: 8px solid #C8A96A;
+}
+
+.card-mision:hover,
+.card-vision:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,.15);
+}
+
+.card-mision h2,
+.card-vision h2{
+    margin: 20px 0;
+    font-family: 'Noto Serif', serif;
+}
+
+.card-mision p,
+.card-vision p{
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.card-mision i,
+.card-vision i{
+    font-size: 40px;
+    color: #C8A96A;
+}
+
+
+/* ==========================================
+   PRODUCTOS DESTACADOS
+   ========================================== */
+
+.productos-destacados{
+    background-color: rgb(39, 41, 53);
+    padding: 80px 0;
+    width: 100%;
+}
+
+.container-productos{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.seccion-subtitulo{
+    font-family: 'Epilogue', sans-serif;
+    color: rgba(241, 212, 154, 0.8);
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
+.grid-productos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.producto-card{
+    text-align: center;
+}
+
+.producto-imagen{
+    width: 100%;
+    aspect-ratio: 16/10;
+    background-color: rgba(255,255,255,.05);
+    overflow: hidden;
+    margin-bottom: 25px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.producto-imagen img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.producto-titulo{
+    font-family: 'Noto Serif', serif;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.producto-precio{
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+    color: #d4af37;
+    margin: 0;
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+.sitio-footer{
+    background-color: rgb(39, 41, 53);
+    padding: 60px 0 20px;
+    width: 100%;
+    font-family: 'Epilogue', sans-serif;
+    border-top: 1px solid rgba(241,212,154,.2);
+}
+
+.contenedor-footer{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 20px;
+}
+
+.columna-footer{
+    flex: 1;
+}
+
+.columna-footer h4{
+    font-size: 16px;
+    color: rgba(241,212,154,1);
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.columna-footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.columna-footer ul li{
+    margin-bottom: 12px;
+}
+
+.columna-footer ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: color .3s ease;
+}
+
+.columna-footer ul li a:hover{
+    color: rgba(241,212,154,1);
+}
+
+.redes-lista i{
+    margin-right: 8px;
+    font-size: 16px;
+    color: rgba(241,212,154,1);
+}
+
+.col-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-circular{
+    width: 120px;
+    height: 120px;
+    background-color: rgba(255,255,255,.05);
+    border: 1px solid rgba(241,212,154,.3);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.logo-circular img{
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+}
+
+.footer-inferior{
+    max-width: 1300px;
+    margin: 40px auto 0;
+    padding: 20px 40px 0;
+    border-top: 1px solid rgba(255,255,255,.1);
+    text-align: center;
+}
+
+.footer-inferior p{
+    font-size: 13px;
+    color: rgba(255,255,255,.6);
+    margin: 0;
+}
